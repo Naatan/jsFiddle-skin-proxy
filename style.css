@@ -1,0 +1,213 @@
+body {
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: .7em;
+    margin: 0;
+    padding: 0;
+}
+
+body, ul, ol, li, p, pre, div, a {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #E5E5E5;
+}
+
+#tabs pre {
+	color: #BABABA;
+    background: #383838;
+}
+
+a {
+    outline: none;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #494949;
+    cursor: pointer;
+}
+
+#tabs a {
+    text-shadow: 0 1px 0 #494949;
+}
+#tabs #resources a {
+    font-size: 1.3em;
+}
+
+.tCont {
+    font-size: 1em;
+    font-family: "Monaco", Helvetica, Arial, sans-serif;
+}
+
+#wrapper {
+    overflow: hidden;
+}
+
+#head,
+#triggers,
+#actions li,
+#triggers li a,
+#actions li.active,
+#actions li.active a,
+#head h1 a {
+    background: #2D2D2D;
+}
+
+#head {
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    position: relative;
+    height: 30px;
+    overflow: hidden;
+}
+
+    #head h1 {
+        float: left;
+        height: 30px;
+        width: 138px;
+        margin: 0 0 0 10px;
+    }
+    
+        #head h1 a {
+            float: left;
+            height: 30px;
+            width: 138px;
+			background: url(http://jsfiddle.net/img/mooshell-frame.sprite.png);
+            background-position: 100% -112px;
+            text-indent: -9999em;
+        }
+
+#actions {
+    float: right;   
+}
+
+    #actions li {
+        float: left;
+        height: 30px;
+        background-position: 0 -47px;
+        background-repeat: no-repeat;
+    }
+    
+        #actions li a {
+            display: block;
+            height: 30px;
+            line-height: 28px;
+            padding: 0 14px;
+            color: #C4C4C4;
+        }
+        
+    #actions li.active {
+        background-position: 0 -173px;
+    }
+
+        #actions li.active a {
+            background-position: 100% -173px;
+            color: #FFFFFF;
+            text-shadow: none;
+            
+        }
+
+#triggers {
+    float: right;
+    padding: 0 4px;
+    background-position: 0 -47px;
+}
+
+    #triggers li {
+        float: left;
+        height: 30px;
+        background-repeat: no-repeat;
+    }
+
+    #triggers li.tRun a {
+        background-position: 0 -112px;
+    }
+
+    #triggers li.tEdit a {
+        background-position: -31px -112px;
+    }
+
+        #triggers li a {
+            display: block;
+            height: 30px;
+            text-indent: -9000em;
+            width: 31px;
+        }
+        
+#tabs {
+    background: #383838 !important;
+    position: relative;
+}
+
+    #tabs .tCont {
+        padding: 10px;
+        margin: 0;
+        display: none;
+        overflow: auto;
+    }
+    
+    #tabs .active {
+        display: block;
+    }
+
+#result iframe {
+    width: 100%;
+    border: none;
+}
+
+/* -------------------------------------------------------- SYNTAX COLORS */
+
+.standardLighter span {
+	color: #FFFFFF !important;
+}
+.standardLighter .standardnum {
+	background-color: #161616 !important;
+	color: #757575 !important;
+}
+.standardLighter .standardline {
+	background-color: #383838 !important;
+	border-top: 1px solid #383838 !important;
+	border-bottom: 1px solid #383838 !important;
+	border-left: 1px solid #939393 !important;
+}
+.standardLighter .standardfirst { padding-top: 5px; }
+.standardLighter .standardlast  { padding-bottom: 5px; }
+.standardLighter .alt {
+	border-top: 1px solid #757575 !important;
+	border-bottom: 1px solid #757575 !important;
+	background-color: #6D6D6D !important;
+}
+
+/** Pre specific styles */
+pre.standardLighter {
+	background-color: #383838 !important;
+}
+
+/** OL specific styles */
+ol.standardLighter {
+	color: #BCBCBC !important;
+	background-color: #4C4C4C !important;
+}
+
+/** Div specific styles */
+div.standardLighter div {
+	background-color: #3F3F3F !important;
+}
+
+/** Symbol styles */
+.standardLighter .de1 {}
+.standardLighter .de2 {}
+.standardLighter .kw1 { color: #939393 !important; }
+.standardLighter .kw2 { color: #8E8E8E !important; }
+.standardLighter .kw3 { color: #848484 !important; }
+.standardLighter .kw4 { color: #999999 !important; }
+.standardLighter .co1 { color: #888888 !important; }
+.standardLighter .co2 { color: #888888 !important; }
+.standardLighter .st0 { color: #969696 !important; }
+.standardLighter .st1 { color: #9B9B9B !important; }
+.standardLighter .st2 { color: #999999 !important; }
+.standardLighter .nu0 { color: #686868 !important; }
+.standardLighter .me0 { color: #757575 !important; }
+.standardLighter .me1 { color: #757575 !important; }
+.standardLighter .br0 { color: #FCFCFC !important; }
+.standardLighter .sy0 { color: #FCFCFC !important; }
+.standardLighter .es0 { color: #FCFCFC !important; }
+.standardLighter .re0 { color: #7C7C7C !important; }
