@@ -118,11 +118,15 @@ a {
     }
 
     #triggers li.tRun a {
-        background-position: 0 -112px;
+		margin: 6px 4px 0 0;
+		background: url('sprite.png') no-repeat top left; width: 12px; height: 12px;
+        background-position: 0px 0px;
     }
 
     #triggers li.tEdit a {
-        background-position: -31px -112px;
+		margin: 6px 0 0;
+		background: url('sprite.png') no-repeat top left; width: 12px; height: 12px;
+        background-position: -22px 0px;
     }
 
         #triggers li a {

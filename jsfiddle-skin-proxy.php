@@ -32,7 +32,7 @@ class jsfiddle_skin_proxy {
 			$output
 		);
 		
-		$output = str_replace('</head>', "<link rel=\"stylesheet\" type=\"text/css\" href=\"$url_proxy/style.css\" />\n</head>", $output);
+		$output = str_replace('</head>', "<link rel=\"stylesheet\" type=\"text/css\" href=\"$url_proxy/skins/dark/style.css\" />\n</head>", $output);
 		
 		return $output;
 	}
