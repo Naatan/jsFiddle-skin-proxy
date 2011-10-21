@@ -216,3 +216,17 @@ div.standardLighter div {
 .standardLighter .sy0 { color: #FCFCFC !important; }
 .standardLighter .es0 { color: #FCFCFC !important; }
 .standardLighter .re0 { color: #7C7C7C !important; }
+
+/* -------------------------------------------------------- SCROLLBAR */
+
+.tinyscrollbar { overflow: hidden !important; }
+.tinyscrollbar .viewport { width: 100%; height: 100%; overflow: hidden; position: relative; }
+.tinyscrollbar .overview { list-style: none; position: absolute; left: 0; top: 0; margin-right: 20px; }
+.tinyscrollbar .thumb .end,
+.tinyscrollbar .thumb { background-color: #1E1E1E; }
+.tinyscrollbar .thumb:hover { background-color: #494949; }
+.tinyscrollbar .scrollbar { position: absolute; right: 5px; width: 5px; }
+.tinyscrollbar .track { background-color: #141414; height: 100%; position: relative; padding: 0 1px; }
+.tinyscrollbar .thumb { height: 20px; width: 100%; cursor: pointer; overflow: hidden; position: absolute; top: 0; }
+.tinyscrollbar .thumb .end { overflow: hidden; height: 5px; }
+.tinyscrollbar .disable{ display: none; }
