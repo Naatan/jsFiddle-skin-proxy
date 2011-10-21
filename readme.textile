@@ -1,4 +1,4 @@
-!http://cl.ly/131L2r3H0H1a2h1j2B3n/Screen_Shot_2011-10-20_at_9.53.20_PM.png(Screenshot)!
+!http://f.cl.ly/items/272n0M0x3p301U41311v/jsfiddle-skin.png!
 
 Just threw this together quickly so that I can style jsfiddle embeds on my website (the default doesn't go well with dark websites).
 
