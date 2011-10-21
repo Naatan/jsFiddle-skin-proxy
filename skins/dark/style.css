@@ -13,9 +13,9 @@ body, ul, ol, li, p, pre, div, a {
     color: #E5E5E5;
 }
 
-#tabs pre {
+#tabs pre, #result {
 	color: #BABABA;
-    background: #383838;
+    background: #0A0A0A;
 }
 
 a {
@@ -48,7 +48,14 @@ a {
 #actions li.active,
 #actions li.active a,
 #head h1 a {
-    background: #2D2D2D;
+    background: #161616;
+}
+
+#actions li:hover,
+#triggers li:hover,
+#actions li a:hover,
+#triggers li a:hover {
+    background: #1E1E1E;
 }
 
 #head {
@@ -85,15 +92,15 @@ a {
         background-position: 0 -47px;
         background-repeat: no-repeat;
     }
-    
+	
         #actions li a {
             display: block;
             height: 30px;
             line-height: 28px;
-            padding: 0 14px;
+            padding: 0 4px;
             color: #C4C4C4;
         }
-        
+		
     #actions li.active {
         background-position: 0 -173px;
     }
@@ -113,16 +120,21 @@ a {
 
     #triggers li {
         float: left;
+		width: 30px;
         height: 30px;
         background-repeat: no-repeat;
     }
-
+	
     #triggers li.tRun a {
-        background-position: 0 -112px;
+		margin: 8px 4px 0 9px;
+		background: url('sprite.png') no-repeat top left; width: 12px; height: 12px;
+        background-position: 0px 0px;
     }
 
     #triggers li.tEdit a {
-        background-position: -31px -112px;
+		margin: 8px 0 0 9px;
+		background: url('sprite.png') no-repeat top left; width: 12px; height: 12px;
+        background-position: -22px 0px;
     }
 
         #triggers li a {
@@ -133,7 +145,6 @@ a {
         }
         
 #tabs {
-    background: #383838 !important;
     position: relative;
 }
 
@@ -159,11 +170,9 @@ a {
 	color: #FFFFFF !important;
 }
 .standardLighter .standardnum {
-	background-color: #161616 !important;
 	color: #757575 !important;
 }
 .standardLighter .standardline {
-	background-color: #383838 !important;
 	border-top: 1px solid #383838 !important;
 	border-bottom: 1px solid #383838 !important;
 	border-left: 1px solid #939393 !important;
@@ -173,23 +182,19 @@ a {
 .standardLighter .alt {
 	border-top: 1px solid #757575 !important;
 	border-bottom: 1px solid #757575 !important;
-	background-color: #6D6D6D !important;
 }
 
 /** Pre specific styles */
 pre.standardLighter {
-	background-color: #383838 !important;
 }
 
 /** OL specific styles */
 ol.standardLighter {
 	color: #BCBCBC !important;
-	background-color: #4C4C4C !important;
 }
 
 /** Div specific styles */
 div.standardLighter div {
-	background-color: #3F3F3F !important;
 }
 
 /** Symbol styles */

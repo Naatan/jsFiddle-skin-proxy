@@ -2,9 +2,9 @@
 
 class jsfiddle_skin_proxy {
 	
-	public static function process($id,$result = false) {
+	public static function process($id, $result = false, $tabs = 'js,html,css,result') {
 		
-		$url = $result ? 'http://fiddle.jshell.net/'.$id.'/show/light/' : 'http://fiddle.jshell.net/'.$id.'/embedded/';
+		$url = $result ? 'http://fiddle.jshell.net/'.$id.'/show/light/' : 'http://fiddle.jshell.net/'.$id.'/embedded/'.urlencode($tabs).'/';
 		
 		static::validate($id);
 		$output = static::get_contents($url);
@@ -32,7 +32,13 @@ class jsfiddle_skin_proxy {
 			$output
 		);
 		
-		$output = str_replace('</head>', "<link rel=\"stylesheet\" type=\"text/css\" href=\"$url_proxy/style.css\" />\n</head>", $output);
+		$output = preg_replace(
+			'/shell_edit_url\s+?\=\s+?\'/i',
+			'shell_edit_url = \'http://jsfiddle.net',
+			$output
+		);
+		
+		$output = str_replace('</head>', "<link rel=\"stylesheet\" type=\"text/css\" href=\"$url_proxy/skins/dark/style.css\" />\n</head>", $output);
 		
 		return $output;
 	}
